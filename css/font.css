@@ -1,0 +1,44 @@
+@font-face {
+    font-family: "Relaway";
+    src: url('../fonts/Raleway-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "Relaway Thin";
+    src: url('../fonts/Raleway-Thin.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "Relaway Light";
+    src: url('../fonts/Raleway-Light.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "Relaway Extralight";
+    src: url('../fonts/Raleway-ExtraLight.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "Relaway Medium";
+    src: url('../fonts/Raleway-Medium.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "Relaway Black";
+    src: url('../fonts/Raleway-Black.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "Relaway Bold";
+    src: url('../fonts/Raleway-Bold.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "Relaway Semibold";
+    src: url('../fonts/Raleway-SemiBold.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "Relaway Extrabold";
+    src: url('../fonts/Raleway-ExtraBold.ttf') format("truetype");
+}

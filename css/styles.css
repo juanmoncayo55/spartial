@@ -348,5 +348,29 @@ img{max-width: 100%;}
 
 /* Footer */
 .footer{
-	
+	background-color: var(--grisClaro);
+	padding: 8rem 0;
+}
+.footer-socialnetworks{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-socialnetworks a:nth-child(2){
+	margin: 0 7rem;
+}
+.footer-socialnetworks a img {
+    width: 4rem;
+}
+.footer-data{
+	color: var(--gris);
+	font-size: 1.5rem;
+	margin-top: 5rem;
+}
+.footer-data span{
+	padding: 0 3rem;
+}
+.footer-data span:nth-child(2){
+	border-left: 1px solid var(--gris);
+	border-right: 1px solid var(--gris);
 }

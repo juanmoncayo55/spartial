@@ -4,17 +4,23 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Spartial</title>
+	<link rel="preload" href="css/normalize.css" as="style">
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="preload" href="css/font.css" as="style">
 	<link rel="stylesheet" href="css/font.css">
+	<link rel="preload" href="css/styles.css" as="style">
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 	<header class="bannerHeader">
 		<div class="bannerTop">
+			<a href="#" class="bannerTop-menuBars" id="openMenu">
+				<img src="icons/bars-solid.svg" alt="">
+			</a>
 			<div class="bannerTop-logo">
 				<p><a href="#">Spartial </a> By Templated</p>
 			</div>
-			<nav class="bannerMenu navigation">
+			<nav class="bannerMenu navigation" id="navigation">
 				<a href="#" class="navigation-link">Home</a>
 				<a href="#" class="navigation-link">Generic</a>
 				<a href="#" class="navigation-link">Elements</a>
@@ -130,5 +136,8 @@
 			<span>Images: Unsplash</span>
 		</div>
 	</footer>
+	<a href="#" class="closeMenu" id="closeMenu"></a>
+
+	<script src="js/script.js"></script>
 </body>
 </html>

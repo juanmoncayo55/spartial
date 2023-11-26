@@ -8,6 +8,7 @@
 	--grisClaro: #F6F6F6;
 	--blanco: #FFFFFF;
 	--negro: #000000;
+	--colorMenu: #767a7f;
 
 	/*Fuentes*/
 	--fnormal: 'Relaway';
@@ -80,29 +81,90 @@ img{max-width: 100%;}
     display: flex;
     flex-direction: column;
 }
+.bannerTop-logo{
+	display: none;
+}
+.navigation{
+	position: fixed;
+    bottom: 0;
+    top: 0;
+    background-color:var(--secundary);
+    padding: 1.8rem;
+    max-width: 80%;
+    width: 30rem;
+    left: -1000px;
 
-.bannerTop {
 	display: flex;
-	justify-content: space-between;
-	margin: 0 auto;
-	width: 93%;
+	flex-direction: column;
+	z-index: 10;
+	transition: .5s all ease-in-out;
 }
-
-.bannerTop-logo p, .bannerTop-logo p a{
-	text-transform: uppercase;
-	font-size: 1.8rem;
-}
-
-
 .navigation a{
-	color: var(--blanco);
-	font-size: 1.8rem;
+	color: var(--grisClaro);
 	text-transform: uppercase;
+	font-size: 1.8rem;
+	padding: 1.3rem 0;
+    border-bottom: 1px solid var(--grisOscuro);
+}
+.navigation a:last-child{ border-bottom: none; }
+
+.bannerTop-menuBars{
+	background-color: var(--colorMenu);
+	display: inline-block;
+	padding: .8rem 1.8rem;
+    border-radius: 5px;
+    margin: 0 2rem;
+}
+.bannerTop-menuBars img{
+	width: 1.5rem;
+	vertical-align: middle;
+}
+.closeMenu{
+	display: none;
+
+	z-index: 5;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+@media (min-width: 980px) {
+	.bannerTop-menuBars{ display: none; }
+	.bannerTop {
+		display: flex;
+		justify-content: space-between;
+		margin: 0 auto;
+		width: 93%;
+	}
+	.bannerTop-logo{
+		display: block;
+	}
+	.bannerTop-logo p, .bannerTop-logo p a{
+		text-transform: uppercase;
+		font-size: 1.8rem;
+	}
+
+	.navigation{
+		display: block;
+		position: relative;
+		background-color: transparent;
+		max-width: 100%;
+		width: auto;
+	}
+
+	.navigation a{
+		color: var(--blanco);
+		font-size: 1.8rem;
+		text-transform: uppercase;
+		padding: 0;
+		border-bottom: none;
+	}
+	.bannerTop-logo p a{ color: var(--blanco); font-family: var(--fbold) }
+
+	.navigation a:nth-child(2){ margin:0 4rem; }
 }
 
-.bannerTop-logo p a{ color: var(--blanco); font-family: var(--fbold) }
-
-.navigation a:nth-child(2){ margin:0 4rem; }
 
 .bannerCenter{
 	align-self: center;
